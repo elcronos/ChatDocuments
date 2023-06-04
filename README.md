@@ -12,9 +12,10 @@ and set up the OpenAI API:
 
 Open a terminal or command prompt and run the following command:
 
-'''terminal
-pip install -r requirements.txt
-'''
+```bash
+  pip install -r requirements.txt
+```
+
 This will install Langchain and its dependencies as long as Chroma, a vector
 database plus a little dependency to extract information out of a Word document.
 
@@ -24,9 +25,9 @@ After signing up for an OpenAI account, you have to create an API key from you
 account on the platform.openai.com web site.
 
 # Run locally
-'''terminal
-gradio app.py
-'''
+```bash
+  gradio app.py
+```
 
 Running on local URL:  http://127.0.0.1:7861
 
@@ -35,9 +36,9 @@ To create a public link, set `share=True` in `launch()`.
 
 In the app.py script, the last line can be replaced by:
 
-'''
+```bash
 demo.queue(concurrency_count=5, max_size=20).launch(share=True)
-'''
+```
 
 This will generate a public url that deploys your code only for 72 hours.
 The url will be displayed in the terminal. You will be able to access that URL
